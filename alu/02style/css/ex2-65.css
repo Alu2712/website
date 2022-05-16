@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    float: left;
+    /* float: right; */
+    /* 요소를 왼쪽/오른쪽으로 배치하고, 그 주변 요소들이 주변을 감싸며 흐르게 만듦, 
+    블록요소에만 사용할 수 있다. */
+    /* 가로가 설정되어있지 않으면 컨텐츠의 양만큼만 차지한다. */
+    margin: 20px 30px 2px 0;
+    padding: 3px 10px;
+    font-size: 200%;
+    background: brown;
+    color: #fff;
+}
+p {
+    /* float: left; */
+    width: 500px;
+    text-align: justify;
+    color: darkgreen;
+
+    /* height: 200px;
+    overflow: hidden; */
+    border: 1px solid blue;
+
+    /* float이 선언 되어있는 형제 요소는 겹치게끔 표현이 되는데, 
+    그의 자식이 인라인 요소라면 float이 선언된 부모의 형제객체 주변을 흐르는것처럼 보인다. */
+    /* 자체 overflow에 대한 해결책이 있다면, 흐르지 않고 개별화 된다. */
+
+    /* 일부 flaot:right;가 선언된 자식을 가지고 있는 경우 
+    부모요소의 Width가 선언되었을때(물리적으로 겹치는 수준), 
+    float영역 안에서의 inline요소들이 흐르는것 처럼 보인다. 
+    left는 기본값이라 배치가 수월함. */
+}
+p strong {
+    font-size: 120%;
+}
+div {
+    width: 500px;
+    border: 1px solid red;
+}
+
+/* 자식이 float요소를 모두 가지고 있을때, 부모는 자식의 높이를 인식하지 못한다. 고질병.
+
+자식의 일부가 float요소가 없고, 물리적으로 밀리는 텍스트의 양이 있다면, 
+부모는 그 텍스트의높이 까지만 인식한다. */

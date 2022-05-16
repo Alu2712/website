@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {
+    margin: 20px 30px;
+    max-width: 800px;
+}
+p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 13px;
+}
+.skate {
+    float: left;
+    width: 38%;
+    background: #ddd;
+}
+.football {
+    float: right;
+    width: 55%;
+    background: #ddd;
+}
+.olympic {
+    /* clear: left; */
+    /* clear: right;  */
+    /* clear: left / right;를 쓸 때, 각 형제 객체 높이의 차 만큼만 흐르는 식으로 표현이 되는데 이는 각 높이에 따라 다른 모습으로 나온다.  */
+
+    background: #cff;
+    /* clear: both; */
+    /* 블록요소에서 float에 대해 선언하지 않은 요소가 주변빈공간으로 딸려 올라가는 것을 막기 위해 양쪽어디에도 치우치지 않는다고 clear: both; 를 선언한다. */
+}

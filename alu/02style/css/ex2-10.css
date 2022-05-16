@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.abox > p {
+    color: blue;
+}
+.abox > p {
+    color: blue;
+}
+/* 꺽쇠를 써서 1대 자손을 선택하여 선언할 수 있다.
+ 꺽쇠 좌우의 공백은 상관없다. */
+
+.abox li > p {
+    color: green;
+}
+.abox li p {
+    color: green;
+}
+/* 선택자에 공백을 쓴다는 것은 전부포함된 하위관계를
+    이야기하며, 그 다음에 꺽쇠를 사용하여 직계자손을 선택자로
+  부를수 있다. */
+
+.abox ul li p {
+    color: red;
+}
+.abox > ul > li > p {
+    color: red;
+}
+/* 특정지어질 수만 있다면 기술방법은 상관이 없다. 
+다만 본인 소속안에서의 규율이 있다면 지키도록 하자 */

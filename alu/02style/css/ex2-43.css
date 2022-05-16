@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.who { 
+    height: 150px; margin-bottom:10px;
+    background :#67758e url("../img/bg_size.png") no-repeat;
+    /* background :#67758e url("../img/bg_size.png") no-repeat / cover; */
+    /* 라고 축약형 쓸수있으나, ie가 인지를 못할 수 있다. */
+}
+.who1 { background-size: 100px 200px; }
+.who2 { background-size: auto; }
+.who3 { background-size: 80% 150%; }
+.who4 { background-size: cover; }
+.who5 { background-size: contain; }

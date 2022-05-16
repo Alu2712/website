@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>flexbox</title> 
+<style>
+    .flexbox {
+        display: flex;
+        height: 200px;
+        background: #ccc;
+    }
+    .flexbox > div {
+        /* flex: 0 0 200px; */
+        /* flex: 1 1 auto; */
+
+        flex: 0 0 auto;
+        /* width: 200px; */
+        
+        /* flex-basis가 일을 한다. 자식의 초기 사이즈를 설정 */
+        /* flex-basis가 auto로 선언되면 물리적인 최소사이즈만 확보한다 */
+        /* flex-basis나 width나 같은 개념으로 생각하자 */
+        background: darkcyan;
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="flexbox">
+        <div><img src="img/flex.png" alt="flex"></div>
+        <div><img src="img/flex.png" alt="flex"></div>
+        <div><img src="img/flex.png" alt="flex"></div>
+    </div>
+</body>

@@ -1,0 +1,32 @@
+@charset "utf-8";
+p {
+    width: 500px;
+    /* width: 50px; */
+    height: 250px;
+    padding: 20px;
+    /* background: aliceblue; */
+    background-color: aliceblue;
+    /* background-color: red; */
+    background-image: url(/02style/img/bgimg.png);
+    /* background-image: url(/02style/img/bg_ar.png); */
+    /* overflow: hidden; */
+    /* 배경으로 불려온 이미지는 객체의 x,y방향으로 반복되어 메꿔진다. */
+    /* 객체의 사이즈나, 깔리는 배경이미지의 사이즈와는 무관하게 x,y방향으로 반복되어 메꿔진다. */
+
+
+    /* 반복여부 속성들 */
+    /* background-repeat: no-repeat; */
+    /* 반복없음 */
+
+    /* background-repeat: repeat-x; */
+    /* 가로방향으로 반복하여 메꿔짐, 이미지 잘림, 이미지비율유지 */
+
+    /* background-repeat: repeat-y; */
+    /* 세로방향으로 반복하여 메꿔짐, 이미지 잘림, 이미지비율유지 */
+
+    background-repeat: space;
+    /* 가로방향(기준점)으로 반복하여 채우다가, 마지막 객체가 잘리지 않게끔 조정하는 선에서 이미지 사이의 간격을 부여한다, 이미지 안잘림, 이미지 비율유지, 가로세로 모두 반복 */
+
+    /* background-repeat: round; */
+    /* 세로방향(기준점)으로 반복하여 채우다가, 마지막 객체가 잘리지 않게끔 조정하는 선에서 이미지의 비율을 조정, 이미지 안잘림, 가로세로 모두 반복  */
+}

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+h1 {
+    letter-spacing: 5px;
+    background: rgba(234,153,125,0.5);
+    color: #fff;
+    /* opacity: 0.5; */
+}
+/* 자간 조정 */
+p {
+    width: 500px;
+    text-align: justify;
+    /* 양쪽정렬 */
+    text-indent: 15px;
+    /* 첫줄 들여쓰기 */
+    text-transform: lowercase;
+    /* 대문자 입력을 소문자로 일괄변경 */
+
+    /* 추가사항 */
+    word-break: keep-all;
+    /* 단어단위로 끊는 정렬법 */
+}

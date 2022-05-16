@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>flexbox</title> 
+<style >
+    .flexbox {
+        display: flex;
+        /* 자식이 높이가 지정되지 않은 상태(일괄적용) */
+        /* align-items: stretch; */
+        /* 부모를 높이를 따라서 늘어나는 행태, 기본값 */
+        /* align-items: flex-start; */
+        /* 글씨가 입력된 만큼(inline)만 높이로 인식하고, top정렬한다 */
+        align-items: flex-end;
+        /* 글씨가 입력된 만큼(inline)만 높이로 인식하고, bottom정렬한다 */
+        /* align-items: center; */
+        /* 글씨가 입력된 만큼(inline)만 높이로 인식하고, middle정렬한다 */
+        /* align-items: baseline; */
+        /* 글씨가 중심선기준(영어 소문자가 내려가는 기준선)으로 정렬 */
+        
+        /* flex-direction 선언 여부에 따라서 피봇이 이루어지니, 주의할 것 */
+        flex-direction: column;
+        height: 700px;
+        background: #ccc;
+    }
+    .flexbox > div {
+        flex: 1 1 100px;
+        background: darkblue;
+        /* margin: 10px; */
+        font-size: 20px;
+        color:#fff;
+    }
+    .flexbox > div:nth-child(2) {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        font-size: 4rem;
+        /* 자식요소가 무엇이든 간(인라인, 블록, 날것글씨)에, 부모높이 기준에서 미들정렬을 하고 싶으면 부모에 display: flex; align-items: center;를 하여 맞출 수 있다. 객체화 필요 없음. */
+        /* order: 5; */
+    }
+    /* order: n; 0은 기본값이니 기재안해도 무방, 음수도 가능함 */
+    /* flex를 부모로 가지고있는 자식에게 직접 선언 */
+    /* order속성이 선언되지 않은 객체들을 html순서대로 나열하고, 그 다음배치 순서를 지정한다. */
+    .flexbox > div.order3 {
+        order: 5;
+    }
+    /* 자식의 숫자가 가변적일 때는 :nth-child() 세는 것 보다, 콜링용 클래스 네임을 지정하여 셀렉터로 부르고 order를 써주면 혼동을 벗어날 수 있다. */
+</style>
+</head>
+<body>
+    <div class="flexbox">
+        <!-- <div style="order: 3;">child1</div>
+        <div style="order: 4;">child2 yy</div>
+        <div style="order: 2;">child3</div>
+        <div style="order: 1;">child4</div>
+        <div style="order: 5;">child5</div> -->
+        <div class="order1">child1</div>
+        <div class="order2">child2</div>
+        <div class="order3">child3</div>
+        <div class="order4">child4</div>
+        <div class="order5">child5</div>
+    </div>
+</body>

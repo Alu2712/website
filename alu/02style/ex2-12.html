@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head> 
+<meta charset="utf-8">
+<title>형제 선택자</title>   
+<style> 
+	h3 ~ p { color: blue; }
+	/* p중에서 h3과 같은라인에 있는 형제들 모두 */
+	/* css특성상 기준점의 이전 요소는 선택 할 수 없다. 이 단점때문에 추후 DOM접근이 용이한 자바스크립트(jQuery)로 대체하게 되는 것이다. */
+</style> 
+</head> 
+<body>       
+	<h3>엑스포 안내</h3>
+	<p>책자를 배부하고 있습니다.</p>
+	<p>안내데스크를 활용하시기 바랍니다.</p>
+	<ul>
+    	<li><p>주중에는 정오 이벤트가 있습니다</p></li>
+    	<li><p>주말에는 자정 이벤트가 있습니다</p></li>
+	</ul>
+	<p>9월에는 가을 이벤트가 시작됩니다</p>
+</body>
+</html>

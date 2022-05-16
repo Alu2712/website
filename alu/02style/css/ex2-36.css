@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+p { 
+    padding: 10px;
+    background-color: antiquewhite;
+}
+.valign1 { 
+    height: 50px;
+    line-height: 50px;
+}
+.valign2 { 
+    height:100px;
+    vertical-align: middle;
+}
+.valign3 { 
+    height:100px;
+    display: table-cell;
+    /* table의 td와 같은 성향을 갖도록 만드는 선언 */
+    vertical-align: middle;
+    /* 인라인요소 및 테이블에서만 사용할 수 있는 vertical-align속성을 해당 태그의 display로 성향을 바꿔서 적용되게 만들고 있다. */
+    
+    /* display의 세부속성은 키워드를 해석해보면 유추적용이 가능하니 여러 방면으로 사용해보면서 익힐 것.  */
+}

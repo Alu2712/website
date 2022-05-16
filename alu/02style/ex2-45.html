@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>배경이미지의 영역</title>
+    <link rel="stylesheet" type="text/css" href="/02style/css/ex2-45.css">
+</head>
+
+<body>
+    <div class="clip1">background-clip: border-box;(기본값)</div>
+    <div class="clip2">background-clip: padding-box;</div>
+    <div class="clip3">background-clip: content-box;</div>
+
+    <!-- 배경색상과 이미지를 멀티플로 깔았다. 배경색상은 border-box;에서 시작하고, 이미지는 content-box;에서 시작하고 싶을 때 -->
+    <div class="clip3 ori3">
+        background-clip: border-box;<br>
+        background-origin: content-box;
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+.radius {
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+}
+.radius1 {
+    width: 100px;
+    height: 100px;
+    /* border-radius: 100px; */
+    border-radius: 50%;
+    /* 정 원, %로 수치 입력 시 50~100은 동일한 결과가 나온다. */
+    background-color: #C60;
+}
+.radius2 {
+    width: 200px;
+    height: 100px;
+    /* border-radius: 100px 100px 0 0; */
+    /* 좌상단, 우상단의 반지름을 높이만큼 잡고(% 쓰지말것), 나머지는 0으로 기재하면 위를 보는 반원이 된다. */
+
+    border-radius: 0 0 100px 100px;
+    /* 반대로하면 아래를 보는 반원 */
+    background-color: #090;
+}
+.radius3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 200px 0 0 0;
+    /* 원하는 꼭지점영역에 반지름을 높이의 두배(px)로 설정하고, 나머지는 0으로 잡으면 1/4 조각원이 나온다 */
+    background-color: #06C;
+}
+.radius4 {
+    width: 200px;
+    height: 100px;
+    border-radius: 40px 15px 40px 15px;
+    border: 4px dotted #808;
+    background-color: #99a;
+}
+
+.radius5 {
+    display: inline-block;
+    padding: 40px 0;
+    text-align: center;
+    background-color: darkturquoise;
+    width: 490px;
+    border-radius: 15px 70px 15px 70px / 70px 15px 70px 15px;
+    /* 시계방향(좌상단-우상단-우하단-좌하단)으로 돌아간다.
+    좌상단 가로:15 세로:70
+    우상단 가로:70 세로:15
+    우하단 가로:15 세로:70
+    좌하단 가로:70 세로:15로 지정한다는 뜻이고,
+    중심기준 반지름 기준으로 매번 다르게(4개의 코너 2개셋트)잡아 면이 꺾이도록 표현하면 손그림 도형이 나온다 */
+}
+
+.aa{
+    text-align: center;
+    line-height: 100px;
+    
+    width: 100px;
+    height: 100px;
+    background-color:firebrick;
+    border-radius: ;
+}
+
+.zz{
+    display: inline-block;
+    width: 490px;
+    background-color: darkturquoise;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 20px 60px 15px 45px / 70px 15px 70px 15px;
+
+}

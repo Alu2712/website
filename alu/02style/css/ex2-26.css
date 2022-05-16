@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+a { 
+        text-decoration: none; 
+        color:crimson;
+    }
+a:link,
+a:visited {
+    text-decoration: line-through;
+    text-decoration: none;
+    line-height: 1.6;
+    color: rgb(208, 138, 138);
+}
+a:hover { color: lightseagreen }
+a:active { color: black; }
+
+p,
+input {
+    text-transform: capitalize;
+    /* text-transform: lowercase; */
+    /* text-transform: uppercase; */
+    font: bold 25px Times;
+    color: darkmagenta;
+}

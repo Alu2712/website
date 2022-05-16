@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+div{
+    width: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px solid rosybrown;
+    border-bottom: none;
+    outline: 1px solid burlywood;
+    outline-offset: 2px;
+}
+p {
+    display: inline-block;
+    margin: 20px 10px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 65px 15px / 10px 55px;
+    background: #abcdef;
+}
+
+/* box-shadow: 위치x 위치y 흐림정도 퍼짐정도 inset여부 색상; */
+.shadow1 {
+    box-shadow: 8px 15px;
+}
+.shadow2 {
+    box-shadow: 8px 15px rgba(55, 55, 156, 0.4);
+}
+.shadow3 {
+    box-shadow: 8px 15px 10px rgba(0, 0, 50, 0.4);
+}
+.shadow4 {
+    box-shadow: 8px 15px 10px 7px rgba(0, 0, 50, 0.4);
+}
+.shadow5 {
+    /* box-shadow: 8px 15px 10px inset rgba(0, 0, 50, 0.4); */
+    box-shadow: 8px 15px 10px inset rgba(55, 55, 156, 0.4);
+}
+.shadow6 {
+    box-shadow:
+        15px 15px 5px darkred,
+        20px 20px 5px yellow,
+        25px 25px 5px darkblue;
+}

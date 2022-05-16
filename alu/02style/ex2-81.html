@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>flexbox</title> 
+<style>
+    .flexbox {
+        width: 400px;
+        display: flex;
+        /* flex-wrap: nowrap; */
+        /* 기본값, 적지않아도 적용, 자식들이 부모를 넘치는 형식 1줄로만 진행 */
+        /* flex-wrap: wrap; */
+        /* 부모의 가로에 맞춰 자식들이 줄바꿈이 일어난다 위 부터 붙음*/
+        /* flex-wrap: wrap-reverse; */
+        /* 부모의 가로에 맞춰 자식들이 줄바꿈이 일어난다, 아래부터 붙어서 위로 줄이 늘어남 */
+        /* wrap이라는 요소가 들어가면 자식의 개성(사이즈와 여백)은 최대한 보존하려하고, 
+        nowrap인 경우엔 줄바꿈이 일어나지 않아 공간이 부족하니 자식의 사이즈 변동이 일어난다. */
+        /* height: 100px; */
+        background: #ccc;
+
+        /* flex-flow: flex-direction flex-wrap;을 선언하는 축약형.
+        flex-flow: row nowrap;이 기본값이다. */
+    }
+    .flexbox > div {
+        /* flex: 0 0 200px; */
+        /* flex: 1 1 100px; */
+        height: 100px;
+        /* flex 하위속성이 선언된 부모를 지닌 자식들은 면적이 선언되지 않으면 팽창이 기본. 
+        선언되어 있으면 등간격(멀티라인에서 세로를 의미함) 정렬 */
+        background: darkblue;
+        margin: 10px;
+        font-size: 20px;
+        color:#fff;
+    }
+</style>
+</head>
+<body>
+    <div class="flexbox">
+        <div>child1</div>
+        <div>child2</div>
+        <div>child3</div>
+        <div>child4</div>
+        <div>child5</div>
+        <div>child6</div>
+        <div>child7</div>
+        <div>child8</div>
+    </div>
+</body>

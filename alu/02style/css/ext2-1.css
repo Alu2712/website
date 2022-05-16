@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+* {
+    margin: 10px;
+}
+.container {
+    background: lightblue;
+}
+h1 {
+    background: lightcoral;
+}
+span {
+    color: maroon;
+}
+h2 + p > span {
+    color: midnightblue;
+}
+.tea1 {
+    background: lightcoral;
+}
+.container ul li:first-child {
+    background: lightcoral;
+}

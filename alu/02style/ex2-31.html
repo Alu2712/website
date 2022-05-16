@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>긴 문자 가로맞춤</title> 
+<style>
+    ul { 
+        width: 100px; 
+        border :1px solid #000; 
+    }
+    .wrapping li { word-wrap: break-word; }
+    /* *공백이 없는 인라인 텍스트*에서 부모의 가로값에 따라 줄바꿈을 만드는 속성 */
+</style>
+</head> 
+<body>
+    <ul>
+        <li>
+            <p>이름 : 홍길동</p>
+        </li>
+        <li>
+            <p>이메일 : hongkildong20180101koreapublishing20181231@hanmail.net</p>
+        </li>
+    </ul>
+    <ul class="wrapping">
+        <li>
+            <p>이름 : 홍길동</p>
+        </li>
+        <li>
+            <p>이메일 : hongkildong20180101koreapublishing20181231@hanmail.net</p>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <p> </p>
+        </li>
+    </ul>
+
+</body> 
+</html>

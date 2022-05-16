@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid blue;
+    font-family: 'Noto Sans KR', sans-serif; */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+.clear:after {
+    /* content: "";
+    clear: both;
+    display: table; */
+    content: "";
+    clear: both;
+    display: table;
+}
+a {
+    /* text-decoration: none;
+    color: #444; */
+    text-decoration: none;
+    color: #444;
+}
+a:hover {
+    text-decoration: underline;
+}
+li {
+    /* list-style: none; */
+    list-style: none;
+}
+.wrap {
+    background: #333;
+}
+header {
+    /* background: crimson;
+    height: 60px; */
+    background-color: brown;
+    height: 60px;
+}
+header h1 {
+    /* float: left;
+    margin: 2px 40px 0 0; */
+    float: left;
+    margin: 2px 40px 0 0;
+}
+header .gnb {
+    /* float: left;
+    padding: 18px 0 0 0; */
+    float: left;
+    padding: 18px 0 0 0;
+}
+header .gnb li {
+    float: left;
+}
+header .gnb li a {
+    /* display: block;
+    width: 50px;
+    text-align: center;
+    font-size: 16px; */
+    display: block;
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+.container {
+    /* height: calc(100vh - 100px); */
+        /* float를 줄 수 있는데, 고정값을 쓰지않으려면 가변적인 대응이 가능토록 선언해주면 된다. */
+    height: calc(100vh - 100px);
+    
+}
+.lnb {
+    /* float: left;
+    width: 20%;
+    height: 100%; */
+    /* 부모의 높이(기 설정)를 100% 따라간다 */
+    /* background: lightgreen; */
+    float: left;
+    width: 20%;
+    height: 100%;
+    background: lightskyblue;
+}
+.lnb li a {
+    /* display: block;
+    padding: 5px 20px; */
+    display: block;
+    padding: 5px 20px;
+}
+.content_area {
+    /* float: left;
+    width: 80%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: forestgreen; */
+    float: left;
+    width: 80%;
+    height: 100%;
+    background: rgb(165, 156, 156);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+footer {
+    /* height: 40px;
+    padding: 10px;
+    background: lightgray; */
+    height: 40px;
+    padding: 10px;
+    background: darkgrey;
+}
+footer p {
+    text-align: center;
+}

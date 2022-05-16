@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+h1, p {
+    border: 5px solid lightblue;
+}
+p {
+    font-size: 50px;
+}
+
+/* 공통된 요소를 그룹선택자로 호출하여 선언하고,
+ 개별 선언은 따로 호출하여 선언한다. */
+
+h1 {
+    border: 5px solid lightblue;
+}
+p {
+    border: 5px solid lightblue;
+    font-size: 50px;
+}
+/* 혼란스러우면 다 개별로 선언하면 된다. 
+선택은 자율 */

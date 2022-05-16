@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes sample {
+    from {
+        background: firebrick;
+        transform: translate(0, 0);
+    }
+    50% {
+        background: cornflowerblue;
+        transform: translate(30px, 20px);
+    }
+    to {
+        background: forestgreen;
+        transform: translate(0, 0);
+    }
+    /* 0%,50% {
+        background: cornflowerblue;
+        transform: translate(30px, 20px);
+    }
+    키프레임 위치는 중복으로 선언할 수 있다. */
+    
+}
+/* 괄호가 두번 나온다. 닫기 잘할 것.
+@keyframes 애니메이션이름{
+    시작점{ 속성 }
+    중간점{ 속성 }
+    끝점{ 속성 }
+}  */
+p {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background: yellow;
+    animation-name: sample;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: backwards; */
+    animation-fill-mode: both;
+    /* animation-direction: reverse; */
+
+    /* animation: name duration timing-fuction delay iteration-count direction; */
+    /* 축약형 작성법 */
+}
+
+/* 애니메이션 특성상 시작점으로 돌아옴*/
+/* animation-fill-mode: forwards; */
+/* animation-fill-mode: backwards; */
+/* animation-fill-mode: both; */
+
+/* animation-fill-mode: forwards
+(to)마지막 키 프레임의 스타일 값을 유지 */
+
+/* animation-fill-mode: backwards
+애니메이션이 적용되는 즉시 첫번째키프레임의 스타일 값을 갖고  animation-delay 기간 동안 이 값을 유지, 기존에 선언된 처음모습으로 돌아감 */
+
+/* animation-fill-mode: both
+애니메이션이 양방향을 도착지로 만들 수 있으며, 마지막 키 프레임의 스타일 값을 유지 */
+
+/* fill-mode는 animation-direction에 따라 from/to가 변경될 수 있다. */
+
+div{
+    width: 50%;
+    padding: 10px 0;
+    margin: 50px auto;
+    overflow: hidden;
+}
+div.beigeBox{
+    box-shadow: 1px 1px 3px inset rgba(0,0,0,0.2);
+    background: burlywood;
+}
+div.beigeBox > h2{ 
+    animation: aniText 8s infinite linear;
+}
+div.simpleBox > h1{
+    color: rgba(0,0,0,0.1);
+    animation: aniText 5s 1 linear reverse;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+@keyframes aniText{
+    from{ 
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+.animate__
+
+

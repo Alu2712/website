@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>하위 선택자</title>    
+<style> 
+	.abox p{ color: blue; }
+	/* 어느 요소 내부에 존재하는 요소를 가르킨다. css 기술시 선그룹과 공백처리를 사용한다. 이 공백은 html의 class의 공백과는 다르다. html에서의 공백은 중복클래스를 의미하고, css의 공백은 하위요소임을 의미한다. */
+	/* 하위라 함은 싸매진 애들 전부를 말한다. */
+	.bbox li{ background: lightskyblue; }+
+</style> 
+</head> 
+<body>    
+	<div class="abox bbox">
+		<p>7월의 여행지</p>
+		<p>8월의 여행지</p>
+		<ul>
+			<li>
+				<p>1주차 여행지</p>
+			</li>
+			<li>
+				<p>2주차 여행지</p>
+			</li>
+		</ul>
+	</div>
+	<p>내년의 여행지</p>
+</body>
+</html>

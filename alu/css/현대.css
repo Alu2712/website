@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+/* 부모를 줄일때 자식이 일정한 간격으로 줄어들게 하는거_앱솔루트 사용(관리용이) */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 1px solid rgb(201, 29, 29);
+}
+
+section{
+    width: 100%;
+    height: 618px;
+    text-align: center;
+}
+
+h1{
+    font-size: 80px;
+    color: #FFFFFF;
+    vertical-align: middle;
+    margin: 0 0 30px 0 ;
+    text-shadow: 5px -5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.bt{
+    margin: 50px 0 0 0 ;
+    background: url(/images/현대/bt.png) no-repeat;
+    width: 150px; height: 40px;
+    border: 0;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 45px;
+    color:black;
+    padding: 30px 0 10px 0 ;
+}
+
+h4{
+    font-size: 45px;
+    color: #FFFFFF;
+}
+
+.inner_l{
+    width:500px;
+    text-align:left;
+    padding: 70px 0 0 35px;
+    position: relative;
+}
+
+.inner_l > img{ 
+    position: absolute;
+    right: -50px;
+    display: block;
+}
+
+.inner_l2{
+    width:500px;
+    height:500px;
+    text-align:left;
+    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: right;
+}
+
+.inner_r{
+    width:500px;
+    height: 340px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner_r > h4+p{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.inner_r2{
+    width:500px;
+    height: 500px;
+    text-align: left;
+}
+
+.inner_r2 h2{
+    padding: 30px 0 60px 30px;}
+
+
+div>p{
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.p_25{
+    font-size: 25px;
+}
+
+.inner{
+    width: 800px;
+    margin: 0 auto;
+    padding: 150px 0 0 0;
+}
+
+.inner span,b{
+    font-size: 30px;
+    color: #009882;
+    height: 50px;
+    margin: 0 0 10px 0;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.content>div{
+    width: 50%;
+}
+
+
+.sec01{
+    background: url(/images/현대/image1.png) no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height: 618px;
+    margin: 0 auto;
+}
+
+.sec02_l{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec02_r{
+    background-color: #009882;
+    padding-top: 180px;
+    padding-left: 90px;
+}
+
+.sec03_l{background: rgb(231, 231, 231);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bk4{
+    background-image: url(/images/현대/image3.png);
+    width:439px;
+    height:314px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.bk4 p:nth-of-type(1){font-weight: bolder; font-size: 25px; color:#FFFFFF; padding: 25px 0 0 20px;}
+
+.bk4 p:nth-of-type(2){text-align: right; padding: 0 20px 25px 0;}
+
+.bk5{
+    background-image: url(/images/현대/image4.png);
+    width:439px;
+    height:314px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bk5 p:nth-of-type(1){font-weight: bolder; font-size: 30px; color: black; padding: 25px 0 0 20px;}
+
+.bk5 p:nth-of-type(2){text-align: right; padding: 0 20px 25px 0;}
+
+.footer{
+    background-image: url(/images/현대/image6.png);
+    width:100%;
+    height:424px;
+    margin:0 auto;
+    /* position: relative; */
+}
+
+.footer > div {
+    padding: 95px 0 0 0;
+    width: 100%;
+    height: 424px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h3{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+
+@media all and (max-width: 999px){
+
+.sec01{
+    height: 500px;
+}
+
+.inner{
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+}
+
+.inner span,b{
+    font-size: 30px;
+    color: #009882;
+    height: 50px;
+    margin: 0 0 10px 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+}
+
+.content > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+
+}
+
+div[class^=inner_l], div[class^=inner_r]{
+    margin: 0;
+    padding: 0;
+    height: 80%;
+}
+
+.inner_l > img{ 
+    right: 0px;
+    width: 100%;
+}
+
+div[class^=inner] > h2{
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+
+div[class^=inner] > div[class^=bk]{
+    margin: 0 auto;
+}
+
+.bk5{    
+    height: 80%;
+}
+
+.inner_r > h4, p{
+    padding-left: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer > div {
+    padding: 60px 0 0 0;
+    width: 80%;
+    height: 424px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+}

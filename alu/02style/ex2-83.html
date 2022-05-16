@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>flexbox</title>
+    <style>
+        .flexbox {
+            display: flex;
+            height: 200px;
+            background: #ccc;
+            align-items: flex-start;
+            /* align-items의 기본값은 stretch, top정렬을 선언한 상태 */
+        }
+        .flexbox > div {
+            flex: 1;
+            background: darkblue;
+            margin: 10px;
+            font-size: 20px;
+            color: #fff;
+        }
+        .flexbox > div:nth-child(3) {
+            /* align-self: flex-end; */
+            /* 부모에게 flex요소들이 기선언된 상태에서, 자식 개별에게 align-self를 선언하여 vertical 정렬을 따로 줄수 있다. */
+            /* align-self: flex-start; */
+            /* align-self: center; */
+            /* align-self: baseline; */
+            align-self: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexbox">
+        <div><img src="img/flex.png" alt="flex"></div>
+        <div><img src="img/flex.png" alt="flex"></div>
+        <div><img src="img/flex.png" alt="flex"></div>
+        <div><img src="img/flex.png" alt="flex"></div>
+        <div><img src="img/flex.png" alt="flex"></div>
+    </div>
+</body>

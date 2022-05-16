@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid rgb(255, 160, 160); */
+}
+
+header{
+    width: 1200px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px;
+}
+
+header > h1, header > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span > sup{
+    font-size: 60px;
+    font-family:'Rockwell';
+    height: 50px;
+    margin: 5px;
+}
+
+span > span{font-size: 18px;}
+
+h1{font-size: 45px; margin: 40px auto 20px;}
+
+h2{font-size: 30px;
+    font-family:'Gill Sans MT';}
+
+h3{font-size: 30px;
+    text-align: center;
+    font-family: 'sans-serif';
+}
+
+section{
+    width: 1200px;
+    height: 235px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+section > span{
+    width: 290px;
+    height: 235px;
+    background: rgb(255, 255, 255);
+}
+
+/* sec01 */
+.sec1 > span:nth-child(1){
+    margin: 0;
+    background: #979797;
+}
+
+.sec1 > span:nth-child(2){
+    margin: 0;
+    background: #DB0D36;
+    color: #ffff;
+}
+
+.sec1 > span:nth-child(3){
+    margin: 0 0 0 20px; 
+    background: #F5F6F7;
+    color: #888888;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1 > span:nth-child(4){
+    margin: 0 0 0 20px;
+    background-image: url(/images/데일리금융/sec11.png);
+    color: #ffff;
+}
+
+
+/* sec02 */
+.sec2 > span:nth-child(1){
+    margin: 0;
+    background: #F5F6F7;
+    color: #888888;
+}
+
+.sec2 > span:nth-child(2){
+    margin: 0; width: 600px;
+}
+
+.sec2 > span:nth-child(3){
+    margin: 0 0 0 20px;
+    background-image: url(/images/데일리금융/sec21.png);
+    color: #ffff;
+}
+
+
+/* sec03 */
+.sec3 > span:nth-child(1){
+    margin: 0;
+}
+
+.sec3 > span:nth-child(2){
+    margin: 0;
+    background: #F5F6F7;
+    color: #888888;
+}
+
+.sec3 > span:nth-child(3){
+    margin: 0 0 0 20px;
+    margin: 0 0 0 20px;
+    background-image: url(/images/데일리금융/sec31.png);
+    color: #ffff;
+}
+
+.sec3 > span:nth-child(4){
+    margin: 0 0 0 20px;
+    background: #F5F6F7;
+    color: #888888;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cd{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 40px 20px 20px;
+}
+
+span > h2,
+span > p:nth-of-type(1){
+    margin-bottom: 20px;
+}
+
+/* 해시태그 */
+
+span[class^=cd] > a{
+    text-decoration: none;
+    color: white;
+    border: solid 1px;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+span[class^=cd] > p> a{
+    text-decoration: none;
+    color: white;
+}
+
+.cd .a{ color: #888888; }
+
+@media all and (max-width: 999px){
+
+    header{
+        width: 90%;
+        height: 220px;
+    }
+
+    section{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec1 > span:nth-child(3),.sec1 > span:nth-child(4){
+        margin: 20px 0 0 0px;
+    }
+    
+    .sec2 > span:nth-child(1), .sec2 > span:nth-child(3){
+        margin: 20px 0 0 0px;
+    }
+
+    .sec2 > span:nth-child(1){
+        order: 2;
+    }
+
+    .sec2 > span:nth-child(1){
+        order: 1;
+    }
+
+    .sec2 > span:nth-child(3){
+        order: 3;
+    }
+
+    .sec3 > span:nth-child(3),.sec3 > span:nth-child(4){
+        margin: 20px 0 0 0;
+    }
+
+    .sec2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+

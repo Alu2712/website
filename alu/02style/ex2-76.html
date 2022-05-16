@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>flexbox</title> 
+<style>
+    .flexbox {
+        display: flex;
+        height: 200px;
+        background: #ccc;
+    }
+    .flexbox > div {
+        flex: 1;
+        /* flex: 1 1 0; */
+        /* flex: flex-grow flex-shrink flex-basis; 의 기본값만 선언*/
+        
+        /* flex-grow는 부모공간이 남았을 때 자식이 늘어나는 지분 */
+        /* flex-shrink는 부모공간이 부족할 때 자식이 줄어드는 지분 */
+        /* flex-basis는 자식의 초기 width값 선언 */
+        background: darkcyan;
+        margin: 10px;
+        /* 부모에 flex인 자식의 margin은 절대적으로 우선권이 있다. 마진겹침 허용안함 */
+    }
+    .flexbox > div.b2box {
+        flex: 2;
+    }
+</style>
+</head>
+<body>
+    <div class="flexbox">
+        <div><img src="img/flex.png" alt="flex"></div>
+        <div class="b2box"><img src="img/flex.png" alt="flex"></div>
+        <div><img src="img/flex.png" alt="flex"></div>
+    </div>
+</body>

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+p { padding: 20px; }
+.bg_fixed {
+    /* min-height: 200px; */
+    /* 속안의 콘텐츠 상관없이, 최소값 유지한다. 만약 속안의 컨텐츠가 부모의 높이를 넘어서면 부모의 높이가 늘어난다. */
+    height: 200px;
+    /* 속안의 컨텐츠가 부모의 높이를 넘어서면 뚫고 나오거나, overflow 옵션을 조정하여 컨트롤 할수있는 높이요소 */
+    background-image: url(/02style/img/bg_fixed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background: url(/02style/img/bg_fixed.png) center center no-repeat fixed; */
+    /* background: 색상 url(경로) 가로위치 세로위치 반복여부 고정여부; */
+
+    /* 순서(각 밸류값이 겹치는 부분이 없기 때문에 섞어써도 오류는 크게 나지않지만, 최대한 표준은 지켜서 작성할 것), 공백여부 잘 지킬것, 생략시 기본값  */
+}
+.btm {
+    min-height: 200px;
+    background: #595;
+}

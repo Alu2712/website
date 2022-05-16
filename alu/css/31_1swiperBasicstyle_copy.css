@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* 구글아이콘폰트 */
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* outline: 1px solid red; */
+}
+
+
+.basic2{
+    width: 100%;
+    height: 750px;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.swiper-slide.sec01 {
+    background: #333;
+}
+.swiper-slide.sec02 {
+    background: #555;
+}
+.swiper-slide.sec03 {
+    background: #777;
+}
+.swiper-slide.sec04 {
+    background: #999;
+}
+.swiper-slide.sec05 {
+    background: #111;
+}
+/* 슬라이스 */

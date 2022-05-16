@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* 기본 브라우저의 폼 디자인을 감추고, 활성/비활성 상태를
+이미지 또는 css로 대체하여 디자인을 강화하는 방식 */
+
+/* input의 타입이 checkbox이면서, 클래스 명이 css-checkbox인 선택자 */
+/* p.112참고 */
+/* input[type=checkbox].css-checkbox {
+    border: none;
+    background: none;
+    position: absolute;
+    left: -9999px;
+} */
+/* input의 기본 폼은 absolute로 띄워 구석에 넣어둔다 */
+/* input[type=checkbox].css-checkbox + label {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    height: 20px;
+    line-height: 20px;
+    background: url(/02style/img/bg_checkbox.png) 0 0 no-repeat;
+    background-size: 20px 40px;
+    vertical-align: middle; */
+    /* label의 왼쪽 여백을 비워 이미지(sprite)를 배경으로 깐다. 초기값은 0,0위치의 비활성화 이미지가 뜬다. */
+/* } */
+/* input[type=checkbox].css-checkbox:checked + label {
+    background-position: 0 -20px;
+} */
+
+input[type=checkbox].css-checkbox{
+    border: none;
+    background: none;
+    position: absolute;
+    left: -9999px;
+}
+
+input[type=checkbox].css-checkbox + label {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    height: 20px;
+    line-height: 20px;
+    background: url(/02style/img/bg_checkbox.png) 0 0 no-repeat;
+    background-size: 20px 40px;
+    vertical-align: middle;
+}
+
+input[type=checkbox].css-checkbox:checked + label {
+    background-position: 0 -20px;
+}

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.agree { 
+    width: 550px;
+    height: 200px; 
+    border:1px solid #000;
+    /* overflow: visible; */
+    /* 기본값 */
+    
+    /* overflow: hidden; */
+    /* 부모의 영역을 넘는 자식요소는 감춤 */
+
+    /* overflow: auto; */
+    /* 자식요소가 부모의 영역을 넘을경우 스크롤생성, 그렇지 않으면 스크롤이 보이지않음, 사용성이 제일 높음*/
+    overflow-x: hidden;
+    overflow-y: visible;
+    /* -x, -y로 나누어 작성할 수 있음 */
+    /* 스크롤바의 트랙의 사이즈는 15px내외이므로, 이 유격으로 화면지진이 생길 수 있으니 참고할 것, auto와 scroll을 용도에 맞게 쓰자 */
+
+    /* x, -y로 나누는 이유는 각자 다른성향을 선언하기위함이나, 기재하지 않으면 x, -y가 동일하게 적용된다. */
+    /* white-space: nowrap; */
+}

@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+li {
+    list-style-type: none;
+}
+.gnb li {
+    display: inline;
+    /* 원래 <li>는 block요소이다 */
+}
+/* 부모의 요소가 inline인 경우만 제외하고는
+(자식으로 block요소 품을 수 없음), inline-block은 block요소가 
+갖는 성향을 모두 갖고, 한줄에 다른객체가 올수있게 한다. */
+.gnb li a {
+    display: inline-block;
+    /* 원래 <a>는 inline요소이다. inline-block으로 선언하여 
+    width, height 등 block에서 선언할 수 있는 속성을 같이 쓰고있다.*/
+    background: brown;
+    color: #fff;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+.gnb li a:hover {
+    text-decoration: underline;
+    background: #369;
+}
+
+span{
+    background: yellowgreen;
+    padding: 10px;
+    /* 4방향 적용됨 */
+    margin: 20px;
+    /* 인라인 요소는 좌우만 적용, 위아래는 미적용 */
+    display: inline-block;
+    /* 인라인 요소일 때 적용이 안되던 속성을 사용하기 위해 
+    성향을 바꾼다. 면적, 여백들을 원하는대로 수정할 수 있다. */
+}

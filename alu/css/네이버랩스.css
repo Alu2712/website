@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid rgb(255, 160, 160);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid black;
+}
+
+.header{
+    width: 1060px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header > div > a{
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 0 5px 8px 5px;
+    position: relative;
+}
+
+.story{    
+    box-shadow: inset 0 -4px 0 #0078FF;
+    padding: 0 0 8px 0;
+}
+
+.header > div > a:before{
+    content: '';
+    position: absolute;
+    background-color : #0078FF;
+    height: 4px;
+    width: 0;
+    bottom: 0;
+    transition: 0.1s;
+    left: 0;
+}
+
+.header > div > a:hover:before{
+    width: 100%;
+}
+
+/* .header > div > a:visited{
+    box-shadow: inset 0 -4px 0 #0078FF;
+    padding: 0 0 8px 0;
+} */
+
+.header > div > button{
+    background: none;
+    padding: 7px 17px;
+    margin-right: 20px;
+    font-size: 12px;
+    border: 1px solid black;
+}
+
+.header > div > button:hover{ 
+    color: white;
+    background-color: #0078FF;
+    border: 1px solid #0078FF;
+}
+
+section{
+    width: 1060px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 45px 0 0 30px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.content > div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    width: 100%;
+    border-bottom: 1.5px solid rgb(199, 199, 199);
+}
+
+.content > div:nth-of-type(1) > a:nth-of-type(1){
+    background: url(/images/네이버랩스/bigpt.png) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 370px;
+}
+
+.content > div:nth-of-type(1) > a:hover{ cursor: pointer;} 
+
+.content > div:nth-of-type(1) > a > h1{ 
+    font-size: 23px;
+    margin: 20px 0;
+}
+
+.content > div:nth-of-type(1) > a > h1:hover{color: #0078FF;}
+
+.content > div:nth-of-type(1) > a > p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #636363;
+}
+
+.bt{
+    margin: 0 auto;
+}
+
+.bt > button{
+    border: none;
+    width: 30px; height: 3px;
+    background-color: #D9D8D7;
+}
+
+.bt > button:hover{
+    cursor: pointer;  
+    background-color: #0078FF;
+}
+
+/* .bt > button:visited{
+    background-color: #0078FF;
+} */
+
+.cardzoon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10%;
+}
+
+.cardzoon >p{
+    font-size: 13px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+div[cla^=cd]{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 100%;
+    border-bottom: 1.5px solid rgb(199, 199, 199);
+}
+
+div[class^=cd] > div{
+    width: calc(100% - 210px);
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    padding-right: 30px;
+}
+
+div[class^=cd] > div > a{
+    width: 100%;
+}
+
+div[class^=cd] > div > a:hover{ cursor: pointer; color: #0078FF;}
+
+div[class^=cd] > div > a > h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+div[class^=cd] > div > a > p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #636363;
+}
+
+div[class^=cd] > div > .teg{
+    display: flex;
+    flex-direction: row;
+}
+
+.cd1 > a:nth-of-type(1){
+    background: url(/images/네이버랩스/spt1.png) no-repeat;
+    background-size: 100% 100%;
+    width: 240px; height: 135px;
+}
+
+.cd2 > a:nth-of-type(1){
+    background: url(/images/네이버랩스/spt2.png) no-repeat;
+    background-size: 100% 100%;
+    width: 240px; height: 135px;
+}
+
+.cd3 > a:nth-of-type(1){
+    background: url(/images/네이버랩스/spt3.png) no-repeat;
+    background-size: 100% 100%;
+    width: 240px; height: 135px;
+}
+
+.content{
+    width: 820px;
+    margin-bottom: 10%;
+}
+
+.tegzoon{
+    min-width: 160px;
+    margin-bottom: 10%;
+}
+
+.tegzoon > p{
+    font-size: 13px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.teg{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.teg > a{
+    text-decoration: none;
+    color: #757575;
+    border: 1px solid #DBDDE3;
+    background: #F3F5F8;
+    display: inline-block;
+    align-items: flex-start;
+    padding: 4px 10px;
+    margin: 10px 10px 0 0;
+    font-size: 12px;
+}
+
+.teg > a:hover{
+    color: white;
+    border: 1px solid #0078FF;
+    background: #0078FF;
+}
+
+
+footer{
+    width: 100%;
+    height: 110px;
+    background: black;
+}
+
+.footer{
+    width: 1060px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer > div > a{
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+.footer > .ft2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(155, 155, 155);
+    font-size: 12px;
+}
+
+.footer > .ft1{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer > .ft1 > a{
+    height: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer > div > a:hover{ color: white; font-size: 12.2px;}
+/* 호버시 왔다거리지 않게 하는 법 질문 */
+
+.footer > div > select{
+    background: none;
+    border: 0.3px solid rgb(155, 155, 155);
+    color: rgb(155, 155, 155);
+    padding: 4px 7px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+/* 셀렉트 옵션 위로 펼치는 방법 */
+
+.footer > div > select:hover{
+    cursor: pointer;
+    color: white;
+}
+

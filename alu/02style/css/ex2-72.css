@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li { list-style-type: none; }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+a:hover {
+    text-decoration: underline;
+}
+#wrap {
+    background: #cfc;
+}
+header {
+    background: crimson;
+    /* position: absolute; */
+    position: fixed;
+    /* absolute는 기준을 제시하는 부모를 따라가지만, fixed는 그렇지 않다.
+    body의 좌상단을 기준점으로 하여 배치되는것은 맞으나, 뷰포트(현재 내가 보고있는 화면의 사이즈)의 개념도 추가가 된다.
+    fixed로 선언된 객체의 면적의 사이즈가 %로 가는경우에는 레이아웃이 틀어질 수 있다. */
+    /* 차원이 달라지는 형태로 면적인식에서 빠진다. */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* width: 1920px; */
+    height: 60px;
+}
+header h1 {
+    float: left;
+    margin-right: 40px;
+}
+header .gnb {
+    float: left;
+    padding-top: 10px;
+}
+header .gnb li {
+    float: left;
+}
+header .gnb li a {
+    display: block;
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+#container {
+    margin-top: 60px;
+}
+.lnb {
+    float: left;
+    width: 20%;
+    background: lightgreen;
+}
+.lnb li a {
+    display: block;
+    padding: 5px 20px;
+}
+.content_area {
+    float: left;
+    width: 80%;
+    background: forestgreen;
+}
+footer {
+    padding: 10px;
+    background: lightgray;
+}
+footer p {
+    text-align: center;
+}

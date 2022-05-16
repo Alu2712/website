@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+p {
+    padding: 100px;
+    /* background-image:
+        url(/02style/img/bg_tree.png),
+        url(/02style/img/bg_sun.png),
+        linear-gradient(to right, rgba(0, 100, 0, 0), rgba(0, 100, 0, 1));
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom left, 97% 15%, left; */
+    /* background-position: 0 0, 0 0, left; */
+
+    /* background- 로 시작하는 요소는 multiple로 선언했을 경우, 수를 맞춰줘야 한다(해당 구분은 , 로 한다). 변동이 없는경우에도 기본값을 작성하여 수를 맞춰야한다. */
+
+    /* 중첩해서 쓰는 경우, 먼저 작성한 항목이 가장 위(z축 최상)에 놓여진다. */
+
+
+    /* 세분화 된 선언을 또 축약형으로 작성할 수 있다. */
+    background: 
+        url(/02style/img/bg_tree.png) bottom left no-repeat,
+        url(/02style/img/bg_sun.png) 97% 15% no-repeat,
+        radial-gradient(circle, rgba(174,200,238,1) 0%, rgba(148,187,233,0.269) 62%, rgba(36,90,153,0.269) 100%),
+        linear-gradient(to right, rgba(0, 100, 0, 0),  rgba(0, 100, 0, 1)) left no-repeat, rgba(0, 0, 0, 0.5); 
+    /* solid color는 예외사항으로 값(이름)만 적으면 된다.(세부속성 제외) */
+}

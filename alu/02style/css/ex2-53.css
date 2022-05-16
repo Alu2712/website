@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+body {
+    background: url(/02style/img/bg_grid.png);
+}
+.brdr {
+    padding: 10px 0;
+    margin: 15px 0;
+    /* border-top: 1px solid #000;
+    border-bottom: 1px dashed #000; */
+
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+}
+p {
+    display: inline-block;
+    /* 마진겹침은 display속성이 block일때 일어난다 */
+    width: 120px;
+    margin: 10px 8px;
+    padding: 10px;
+    text-align: center;
+    font: 23px Times;
+    background: #f1f1f1;
+}
+.p1 { border: 13px solid #abcdef; }
+.p2 { border: 13px dotted #800; }
+.p3 { border: 13px dashed #357; }
+.p4 { border: 13px double brown; }
+.p5 { border: 13px groove #06c; }
+.p6 { border: 13px ridge crimson; }
+.p7 { border: 13px inset #0c3; }
+.p8 { border: 13px outset #c63; 
+        border-radius: 10px 20px 30px 40px;}
+
+
+/* 딱지모양 머릿기호 만들기 */
+.xbox{
+    width: 0; height: 0;
+    border: 10px solid #000;
+    /* 크기가 없는 객체에 선을 둘러 정사각형 만들기 */
+    /* border-top-color: red; */
+    /* border-bottom-color: lime; */
+    /* 위아래 선의 컬러를 변경하여 모래시계모양을 만든다 */
+    border-right: none;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+
+    /* 선의 오른쪽(절반)을 삭제한다 */   
+}
+
+.box{
+    width: 0; height: 0;
+    border: 10px solid #000;
+    border-right: none;
+    border-top-color: #fff;
+    border-bottom-color: white;
+
+
+}

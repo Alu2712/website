@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+p {
+    padding: 60px;
+    background: red;
+}
+.g1 {
+    background: linear-gradient(red, yellow, green);
+    /* 기본값 그라디언트, 방향 top-bottom, 색상은 넣는대로 진행, 객체의 사이즈에 맞춰서 자동배치 */
+}
+.g2 {
+    background: linear-gradient(to right, yellow, green, indigo);
+    /* 옵션값으로 방향을 설정할 수 있다.
+     to 목적지, 형식으로 작성하며(수치가능(ndeg), 키워드 가능, 키워드 조합이면 공백 필수), 색상보다 앞에써준다 */
+}
+.g3 {
+    background: linear-gradient(to bottom right, yellow, green);
+}
+.g4 {
+    background: linear-gradient(200deg, blue, red);
+}
+.g5 {
+    background: linear-gradient(to right, rgba(0, 0, 255, 0), rgba(0, 0, 255, 1));
+    /* 투명에서 유색으로 생성할 수 있다. body 배경이 흰색이라는 점을 유념하자. 활용방법은 multiple image에서 활용하며, 이미지를 뒤에 깔고 앞에 투명 그라디언트를 얹는다. */
+}
+.g6 {
+    background: repeating-linear-gradient(brown, yellow 15%, green 50%);
+    /* 그라디언트의 반복을 설정할 수 있다. 마지막에 설정한 색 끝값의 수치(위치)에서 끝난다. 나머지영역이 해당그라디언트를 반복한다. 객체를 100%보고, 끝색의 수치값으로 나누면 반복횟수 산출됨. 100% / 50% = 2번 */
+}
+.g7 {
+    background: radial-gradient(red, yellow, green);
+    /* 원형 그라디언트, 중앙에서 바깥으로 색의 방향이 설정된다 */
+}
+.g8 {
+    background: radial-gradient(red 5%, yellow 15%, green 60%);
+    /* 반복 그라디언트가 아닌상태에서 위치값을 면적을 정하는 수치이다. 1셋트가 배치된다. */
+}
+.g9 {
+    background: radial-gradient(circle, red, yellow, green);
+    /* 원형 그라디언트는 객체의 비율을 따라가므로, 찌그러진 배치가 될수있는데, 옵션값으로 circle을 기재시 정원의 그라디언트를 출력 시킬 수 있다. 넘치는 부분은 잘린다. */
+}
+.g10 {
+    background: repeating-radial-gradient(brown, yellow 15%, green 30%);
+    /* 그라디언트의 반복을 설정할 수 있다. 마지막에 설정한 색 끝값의 수치(위치)에서 끝난다. 나머지영역이 해당그라디언트를 반복한다. 객체를 100%보고, 끝색의 수치값으로 나누면 반복횟수 산출됨. 100% / 30% = 3.3번 */
+}

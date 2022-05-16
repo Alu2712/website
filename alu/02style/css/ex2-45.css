@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+div {
+    width: 550px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 15px double rgba(0, 0, 0, 0.6);
+    /* background:#e5cadd;
+    background:url(/02style/img/bg_origin.png) no-repeat; */
+
+    background: red url(/02style/img/bg_origin.png) no-repeat;
+    /* background속성을 축약형으로 선언한다, 컬러를 먼저 선언하고 이미지는 반복을 하지 않아야 차이를 구분할 수 있음  ==>  배경색상은 border-box;에서 시작하고, 이미지는 content-box;에서 시작하는 예제 */
+}
+
+/* background 이미지와 컬러 모두 가능 */
+.clip1 {
+    background-clip: border-box;
+}
+/* border를 포함한 영역부터 시작, 기본값 */
+.clip2 {
+    background-clip: padding-box;
+}
+/* border 안쪽에서 시작 */
+.clip3 {
+    background-clip: content-box;
+}
+/* border와 padding을 건너뛰고, 안쪽 콘텐츠에서 시작 */
+
+/* background-clip의 기본값은 border-box이며, 디자인 상 background 이미지 및 색상의 시작점(0,0)의 위치를 재설정하는 속성 */
+
+
+.ori1 {
+    background-origin: border-box;
+}
+/* border를 포함한 영역부터 시작 */
+.ori2 {
+    background-origin: padding-box;
+}
+/* border 안쪽에서 시작 */
+.ori3 {
+    background-origin: content-box;
+}
+/* border와 padding을 건너뛰고, 안쪽 콘텐츠에서 시작 */
